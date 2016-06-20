@@ -32,10 +32,10 @@ snippet center center environment
 		${0}
 	\end{center}
 # Align(ed)
-snippet ali align(ed) environment
-	\begin{align${1:ed}}
-		\label{eq:${2}}
+snippet ali align(ed,*) environment
+	\begin{align${1}}
 		${0}
+		\label{eq:${2}}
 	\end{align$1}
 # Gather(ed)
 snippet gat gather(ed) environment
@@ -50,8 +50,8 @@ snippet eq equation environment
 # Equation
 snippet eql Labeled equation environment
 	\begin{equation}
+		${0}
 		\label{eq:${2}}
-	${0}
 	\end{equation}
 # Equation
 snippet eq* unnumbered equation environment
