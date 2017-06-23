@@ -31,12 +31,6 @@ snippet center center environment
 	\begin{center}
 		${0}
 	\end{center}
-# Align(ed)
-snippet ali align(ed,*) environment
-	\begin{align${1}}
-		${0}
-		\label{eq:${2}}
-	\end{align$1}
 # Gather(ed)
 snippet gat gather(ed) environment
 	\begin{gather${1:ed}}
@@ -276,19 +270,6 @@ snippet col2 two-column environment
 	\end{columns}
 snippet \{ \{ \}
 	\\{ ${0} \\}
-#delimiter
-snippet lr left right
-	\left${1} ${0} \right$1
-snippet lr( left( right) 
-	\left( ${0} \right)
-snippet lr| left| right| 
-	\left| ${0} \right|
-snippet lr{ left\{ right\} 
-	\left\\{ ${0} \right\\}
-snippet lr[ left[ right] 
-	\left[ ${0} \right]
-snippet lra langle rangle 
-	\langle ${0} \rangle
 # Code listings
 snippet lst
 	\begin{listing}[language=${1:language}]
